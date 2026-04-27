@@ -1,6 +1,8 @@
 .env
 .venv
 
+work/user_responses
+
 proposed
 proposed/*_proposed
 proposed/*_fixed
