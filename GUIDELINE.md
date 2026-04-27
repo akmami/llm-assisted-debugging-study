@@ -98,7 +98,7 @@ failing_test.java
 Once you have completed all tasks:
 
 Ensure every `participant_code.java` file is updated
-Provide the path to your work/ directory to the researcher
+Provide the path to your `work/` directory to the researcher
 
 Example:
 
@@ -136,5 +136,9 @@ The full set of tasks is designed to be completed within a reasonable time frame
 ### Questions
 
 If anything is unclear, please contact the researcher before proceeding.
+
+## Survey
+
+Once the debugging session is completed, we kindly ask you to take a survey using [Google Forms](https://forms.gle/4kVttrjqoKmq9dZR7)
 
 Thanks again for your participation!
