@@ -77,28 +77,6 @@ raw_data() {
       "$PROJ"_"$ID"_buggy "$PROJ"_"$ID"_fixed > study_cases/raw/"$PROJ"_"$ID"/clean_patch.diff;
 }
 
-llm_inputs() {
-   for dir in participant_packets/* ; do
-
-      echo $dir;
-      dir=${dir%/};
-      echo $dir;
-
-      PROJ=$(echo "$dir" | cut -d'_' -f1);
-      BUG=$(echo "$dir" | cut -d'_' -f2);
-
-      echo "Processing $PROJ-$BUG...";
-
-      BUGGY="$dir/buggy_code.java";
-      DESC="$dir/description.txt";
-      TEST="$dir/failing_test.java";
-
-      OUTFILE="llm_inputs/${PROJ}_${BUG}.response.txt";
-
-      python3 solve_bug.py "$BUGGY" "$DESC" "$TEST" > "$OUTFILE";
-   done
-}
-
 run_llm_inputs() {
     for dir in work/participant_packets/*/ ; do
         dir=${dir%/};

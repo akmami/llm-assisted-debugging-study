@@ -1,2 +1,6 @@
 .env
 .venv
+
+proposed
+proposed/*_proposed
+proposed/*_fixed
