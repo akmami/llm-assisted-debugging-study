@@ -8,6 +8,39 @@ Differences between human and LLM-generated bug fixes, especially how the human 
 Whether participants revise their answers after LLM feedback
 The effect of cost-awareness (e.g., energy/resource usage) on reliance on LLMs
 
+## Requirements
+
+This project depends on Defects4J, a widely used framework for evaluating software testing techniques on real-world Java bugs.
+
+Before using this project, you must install and compile Defects4J.
+
+### Installation
+
+Clone the Defects4J repository:
+
+```sh
+git clone https://github.com/rjust/defects4j.git
+cd defects4j
+```
+
+Initialize and compile:
+
+```sh
+cpanm --installdeps .
+./init.sh
+
+```
+
+### Repository
+
+You can find the official Defects4J repository here:
+[https://github.com/rjust/defects4j](https://github.com/rjust/defects4j)
+
+### Notes
+
+Ensure you have Java and all required dependencies installed before running init.sh.
+Refer to the official documentation for platform-specific setup details and troubleshooting.
+
 ## Repository Structure
 
 ```sh
