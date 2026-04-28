@@ -35,8 +35,8 @@ else
    echo "JAVA_HOME/bin already in PATH ...";
 fi
 
-mkdir -p work
-cd work
+mkdir -p work-old
+cd work-old
 
 mkdir -p study_cases/{raw,participant_packets,llm_inputs}
 
@@ -78,7 +78,7 @@ raw_data() {
 }
 
 run_llm_inputs() {
-    for dir in work/participant_packets/*/ ; do
+    for dir in participant_packets/*/ ; do
         dir=${dir%/};
         base=$(basename "$dir");
 
@@ -91,7 +91,7 @@ run_llm_inputs() {
         DESC="$dir/description.txt";
         TEST="$dir/failing_test.java";
 
-        OUTFILE="work/llm_inputs/${PROJ}_${BUG}.response.txt";
+        OUTFILE="llm_inputs/${PROJ}_${BUG}.response.txt";
 
         python3 llm-query.py "$BUGGY" "$DESC" "$TEST" > "$OUTFILE";
     done
