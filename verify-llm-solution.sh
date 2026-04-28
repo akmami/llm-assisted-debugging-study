@@ -4,6 +4,9 @@
 SAVE="true"
 RUN="true"
 
+mkdir -p work-old;
+cd work-old;
+
 mkdir -p proposed;
 cd proposed;
 

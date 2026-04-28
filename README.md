@@ -50,7 +50,7 @@ Refer to the official documentation for platform-specific setup details and trou
 ├── llm-query.py         # Queries LLM to generate bug fixes
 ├── feedback-query.py    # (WIP) Evaluates participant answers using LLM
 ├── README.md
-└── work/                # Generated data (LLM outputs, processed results, etc.)
+└── work-old/            # Generated data (LLM outputs, processed results, etc.)
     ├── llm_inputs
     ├── participant_packets
     └── raw
