@@ -17,6 +17,7 @@ pip install --upgrade pip;
 echo "Installing dependencies ...";
 pip install openai;
 pip install python-dotenv;
+pip install requests;
 
 echo "";
 echo "Setup complete";

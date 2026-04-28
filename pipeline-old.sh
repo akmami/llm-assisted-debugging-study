@@ -93,7 +93,7 @@ run_llm_inputs() {
 
         OUTFILE="llm_inputs/${PROJ}_${BUG}.response.txt";
 
-        python3 llm-query.py "$BUGGY" "$DESC" "$TEST" > "$OUTFILE";
+        python3 llm-query-old.py "$BUGGY" "$DESC" "$TEST" > "$OUTFILE";
     done
 }
 
