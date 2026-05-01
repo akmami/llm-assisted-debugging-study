@@ -20,78 +20,66 @@ https://github.com/TheAlgorithms/Python/blob/master/graphs/kahns_algorithm_topo.
 Orders DAG nodes based on dependencies
 Good for: indegree logic errors
 
-5. Floyd–Warshall
-https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/floyd_warshall.py
-Computes shortest paths between all node pairs
-Good for: DP state propagation bugs
-
-6. Bellman-Ford
+5. Bellman-Ford
 https://github.com/TheAlgorithms/Python/blob/master/graphs/bellman_ford.py
 Handles graphs with negative weights
 Good for: relaxation logic bugs
 
 # Dynamic Programming
 
-7. Longest Increasing Subsequence
+6. Floyd–Warshall
+https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/floyd_warshall.py
+Computes shortest paths between all node pairs
+Good for: DP state propagation bugs
+
+7. Longest Common Substring
+https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/longest_common_substring.py
+
+8. Longest Increasing Subsequence
 https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/longest_increasing_subsequence_iterative.py
 Finds longest strictly increasing subsequence
 Good for: transition + comparator bugs
 
-8. 0/1 Knapsack
+9. 0/1 Knapsack
 https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/knapsack.py
 Maximizes value under weight constraint
 Good for: iteration direction bugs
 
-9. Edit Distance (Levenshtein)
+10. Edit Distance (Levenshtein)
 https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/edit_distance.py
 Measures minimum operations to convert strings
 Good for: DP indexing bugs
 
-10. Matrix Chain Multiplication
+11. Matrix Chain Multiplication
 https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/matrix_chain_multiplication.py
 Optimizes parenthesization cost
 Good for: nested DP logic bugs
 
 # Data Structures
 
-11. Union-Find (Disjoint Set)
+12. Union-Find (Disjoint Set)
 https://github.com/TheAlgorithms/Python/blob/master/data_structures/disjoint_set/disjoint_set.py
 Tracks connected components efficiently
 Good for: path compression bugs
 
-12. Segment Tree
-https://github.com/TheAlgorithms/Python/blob/master/data_structures/segment_tree/segment_tree.py
-Supports efficient range queries + updates
-Good for: recursive propagation bugs
+# Greedy / Sorting
 
-13. Trie (Prefix Tree)
-https://github.com/TheAlgorithms/Python/blob/master/data_structures/trie/trie.py
-Stores strings for fast prefix lookup
-Good for: state corruption bugs
+13. Optimal Merge Pattern
+https://github.com/TheAlgorithms/Python/blob/master/greedy_methods/optimal_merge_pattern.py
 
-14. Heap (Priority Queue)
-https://github.com/TheAlgorithms/Python/blob/master/data_structures/heap/heap.py
-Maintains ordering with heap property
-Good for: ordering invariant bugs
+14. Counting Sort
+https://github.com/TheAlgorithms/Python/blob/master/sorts/counting_sort.py
 
-# Greedy / Interval / Scheduling
-
-15. Merge Intervals
-https://github.com/TheAlgorithms/Python/blob/master/greedy_methods/merge_intervals.py
-Merges overlapping intervals
-Good for: aggregation logic bugs
-
-16. Activity Selection
-https://github.com/TheAlgorithms/Python/blob/master/greedy_methods/activity_selection.py
-Selects maximum non-overlapping activities
-Good for: greedy condition bugs
+15. Radix Sort
+https://github.com/TheAlgorithms/Python/blob/master/sorts/radix_sort.py
 
 # Strings / Sliding Window
 
-17. Longest Substring Without Repeating Characters
-https://github.com/TheAlgorithms/Python/blob/master/strings/longest_substring_without_repeating_characters.py
-Sliding window to maintain uniqueness
-Good for: window boundary bugs
+16. Aho Corasick
+https://github.com/TheAlgorithms/Python/blob/master/strings/aho_corasick.py
+
+17. Knuth-Morris-Pratt
+https://github.com/TheAlgorithms/Python/blob/master/strings/knuth_morris_pratt.py
 
 18. Rabin–Karp String Matching
 https://github.com/TheAlgorithms/Python/blob/master/strings/rabin_karp.py
@@ -105,7 +93,5 @@ https://github.com/TheAlgorithms/Python/blob/master/backtracking/n_queens.py
 Places queens with no conflicts
 Good for: state leakage bugs
 
-20. Subsets / Power Set
-https://github.com/TheAlgorithms/Python/blob/master/backtracking/subsets.py
-Generates all subsets via recursion
-Good for: recursion mutation bugs
+20. Match Work Pattern
+https://github.com/TheAlgorithms/Python/blob/master/backtracking/match_word_pattern.py
