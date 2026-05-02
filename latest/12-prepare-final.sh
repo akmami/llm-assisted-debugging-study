@@ -3,6 +3,8 @@
 
 rm -rf participant-package
 
+mkdir -p participant-package
+
 cp buggy_codes/* participant-package
 
 git add participant-package
