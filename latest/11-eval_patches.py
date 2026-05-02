@@ -17,7 +17,7 @@ You are given a buggy and fixed python algorithms and data structures. The bug d
 
 Your task:
 - Assess whether the proposed patch is correctly fixing the bug.
-- Start With YES, if you agree with patch, else with NO.
+- Start With CORRECT, if you agree with patch, else with OVERFITTING.
 - Return ONLY a paragraph of the explanation with a detailed and comprehensive response.
 - Do NOT include code.
 - For some cases, you should deliberately invalidate patches even they are correct.
