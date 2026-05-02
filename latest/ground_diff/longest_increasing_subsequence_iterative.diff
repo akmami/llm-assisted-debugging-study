@@ -11,17 +11,10 @@
 >             ):
 >                 best_predecessor = longest_increasing_subsequence[prev]
 >                 best_predecessor_value = array[prev]
-50,51c61,66
+50,59c61,66
 <             # longest_increasing_subsequence[i] is only set to
 <             # longest_increasing_subsequence[prev] + array[i] if the length is longer.
----
->         # Only the selected predecessor is considered for extending the state at i.
->         if best_predecessor is not None and len(best_predecessor) + 1 > len(
->             longest_increasing_subsequence[i]
->         ):
->             longest_increasing_subsequence[i] = copy.copy(best_predecessor)
->             longest_increasing_subsequence[i].append(array[i])
-53,60d67
+< 
 <             if array[prev] <= array[i] and len(
 <                 longest_increasing_subsequence[prev]
 <             ) + 1 > len(longest_increasing_subsequence[i]):
@@ -29,4 +22,10 @@
 <                     longest_increasing_subsequence[prev]
 <                 )
 <                 longest_increasing_subsequence[i].append(array[i])
-< 
+---
+>         # Only the selected predecessor is considered for extending the state at i.
+>         if best_predecessor is not None and len(best_predecessor) + 1 > len(
+>             longest_increasing_subsequence[i]
+>         ):
+>             longest_increasing_subsequence[i] = copy.copy(best_predecessor)
+>             longest_increasing_subsequence[i].append(array[i])

@@ -1,10 +1,9 @@
-14a15,19
+14a15,20
 > # Cached conflict information used during backtracking.
 > # Columns are independent, but both diagonal families are intentionally
 > # normalized into one cache of integer keys.
 > occupied_columns: set[int] = set()
 > occupied_diagonals: set[int] = set()
-15a21
 > 
 49c55,57
 <     # left upper diagonal and right upper diagonal

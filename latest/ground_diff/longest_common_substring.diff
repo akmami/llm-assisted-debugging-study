@@ -72,20 +72,19 @@
 >         current_row[0] = 0
 >         dp[i % 2] = current_row
 > 
-59,62c64
+59,62c64,70
 <                 dp[i][j] = 1 + dp[i - 1][j - 1]
 <                 if dp[i][j] > max_length:
 <                     end_pos = i
 <                     max_length = dp[i][j]
 ---
 >                 current_row[j] = 1 + previous_row[j - 1]
-63a66,71
+> 
 >             if current_row[j] > max_length:
 >                 end_pos = i
 >                 max_length = current_row[j]
 > 
 >         previous_row = current_row
-> 
 67c75
 < if __name__ == "__main__":
 ---

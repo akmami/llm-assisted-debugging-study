@@ -16,10 +16,9 @@
 >                 and distance[u] != float("inf")
 >                 and distance[u] + w < distance[v]
 >             ):
-44a57,58
+44a57,61
 >                 if v not in settled_vertices:
 >                     next_active_vertices.add(v)
-45a60,62
+> 
 >         settled_vertices.update(active_vertices)
 >         active_vertices = next_active_vertices
-> 

@@ -20,11 +20,11 @@
 ---
 >         self.word1 = ''
 >         self.word2 = ''
-40c40
+40c40,50
 <                 self.dp[m][n] = 1 + min(insert, delete, replace)
 ---
 >                 best = 1 + min(insert, delete, replace)
-41a42,51
+> 
 >                 if (
 >                     m > 0
 >                     and n > 0
@@ -34,7 +34,6 @@
 >                     best = min(best, 1 + self.__min_dist_top_down_dp(m - 2, n - 2))
 > 
 >                 self.dp[m][n] = best
-> 
 45,46c55,56
 <         """
 <         >>> EditDistance().min_dist_top_down("intention", "execution")
